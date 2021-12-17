@@ -1,0 +1,17 @@
+D:\QuanLyCongVan\QuanLyCongVan\bin\Debug\QuanLyCongVan.exe.config
+D:\QuanLyCongVan\QuanLyCongVan\bin\Debug\QuanLyCongVan.exe
+D:\QuanLyCongVan\QuanLyCongVan\bin\Debug\QuanLyCongVan.pdb
+D:\QuanLyCongVan\QuanLyCongVan\obj\Debug\QuanLyCongVan.csproj.AssemblyReference.cache
+D:\QuanLyCongVan\QuanLyCongVan\obj\Debug\QuanLyCongVan.fdangnhap.resources
+D:\QuanLyCongVan\QuanLyCongVan\obj\Debug\QuanLyCongVan.Properties.Resources.resources
+D:\QuanLyCongVan\QuanLyCongVan\obj\Debug\QuanLyCongVan.csproj.GenerateResource.cache
+D:\QuanLyCongVan\QuanLyCongVan\obj\Debug\QuanLyCongVan.csproj.CoreCompileInputs.cache
+D:\QuanLyCongVan\QuanLyCongVan\obj\Debug\QuanLyCongVan.exe
+D:\QuanLyCongVan\QuanLyCongVan\obj\Debug\QuanLyCongVan.pdb
+D:\QuanLyCongVan\QuanLyCongVan\obj\Debug\QuanLyCongVan.fmain.resources
+D:\QuanLyCongVan\QuanLyCongVan\obj\Debug\QuanLyCongVan.fquanlingdung.resources
+D:\QuanLyCongVan\QuanLyCongVan\obj\Debug\QuanLyCongVan.fmain_nv.resources
+D:\QuanLyCongVan\QuanLyCongVan\obj\Debug\QuanLyCongVan.fquanlycongvan.resources
+D:\QuanLyCongVan\QuanLyCongVan\obj\Debug\QuanLyCongVan.fthongke.resources
+D:\QuanLyCongVan\QuanLyCongVan\obj\Debug\QuanLyCongVan.fxemcongvan.resources
+D:\QuanLyCongVan\QuanLyCongVan\obj\Debug\QuanLyCongVan.fmail.resources
