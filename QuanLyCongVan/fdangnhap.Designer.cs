@@ -134,7 +134,7 @@ namespace QuanLyCongVan
             // 
             this.groupBox2.BackColor = System.Drawing.Color.White;
             this.groupBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("groupBox2.BackgroundImage")));
-            this.groupBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.groupBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.groupBox2.Location = new System.Drawing.Point(95, 12);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(101, 108);

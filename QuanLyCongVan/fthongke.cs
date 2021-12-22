@@ -55,18 +55,23 @@ namespace QuanLyCongVan
         }
 
         // cong van di 
+
+
+        
+
         public void locationlist_vbd()
         {
             string date1 = dtpFrom.Value.ToString("yyyy - MM - dd");
             string date2 = dtpTo.Value.ToString("yyyy - MM - dd");
-            DataTable dt = new DataTable();
-           // string sql = "select * from Congvandi" + " where Ngaynhan between '" + date1 + "'" + "and" + "'" + date2 + "'";
             SqlDataAdapter ad = new SqlDataAdapter("select * from CongVanDi" + " where  Ngaygui between '" + date1 + "'" + "and" + "'" + date2 + "'", conn);
+            
+            DataTable dt = new DataTable();
+            //SqlDataAdapter ad = new SqlDataAdapter("SELECT * from CongVanDi", conn);
             ad.Fill(dt);
-            dtgvVanban.Rows.Clear();
+            dtgvVanban_vbd.Rows.Clear();
             foreach (DataRow data in dt.Rows)
             {
-                int aa = dtgvVanban.Rows.Add();
+                int aa = dtgvVanban_vbd.Rows.Add();
 
                 dtgvVanban_vbd.Rows[aa].Cells[0].Value = data["id"].ToString();
                 dtgvVanban_vbd.Rows[aa].Cells[1].Value = data["SoCv"].ToString();
@@ -136,9 +141,9 @@ namespace QuanLyCongVan
                 lbTong.Visible = true;
                 lbSum_vbd.Visible = true;
                 lbTong_vbd.Visible = true;
-                dtgvVanban_vbd.Location= new Point(27, 434);
-                lbSum_vbd.Location = new Point(94, 644);
-                lbTong_vbd.Location = new Point(200, 644);
+                dtgvVanban_vbd.Location= new Point(35, 378);
+                lbSum_vbd.Location = new Point(60, 560);
+                lbTong_vbd.Location = new Point(150, 560);
                 locationlist_vbd();
                 locationlist();
                 loadSum();

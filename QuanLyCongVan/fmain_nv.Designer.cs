@@ -61,6 +61,7 @@ namespace QuanLyCongVan
             this.btnThongke.BackColor = System.Drawing.Color.White;
             this.btnThongke.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnThongke.BackgroundImage")));
             this.btnThongke.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnThongke.Enabled = false;
             this.btnThongke.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThongke.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnThongke.Location = new System.Drawing.Point(4, 203);

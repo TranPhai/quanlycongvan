@@ -71,5 +71,12 @@ namespace QuanLyCongVan
         {
             LoadCombobox_Macongvan();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            fquanlycongvan f = new fquanlycongvan();
+            this.Hide();
+            f.ShowDialog();
+        }
     }
 }

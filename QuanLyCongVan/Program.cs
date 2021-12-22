@@ -16,7 +16,7 @@ namespace QuanLyCongVan
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new fdangnhap());
+            Application.Run(new fxemcongvan());
         }
     }
 }

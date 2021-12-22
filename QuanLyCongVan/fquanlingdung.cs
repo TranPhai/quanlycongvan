@@ -124,9 +124,11 @@ namespace QuanLyCongVan
                 {
                     MessageBox.Show("Vui lòng điền đầy đủ thông tin", "Thông báo!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-                else if (txtManguoidung.Text.Trim().Length <3 || txtfullname.Text.Trim().Length>64|| txtUsername.Text.Trim().Length <3 || txtUsername.Text.Trim().Length > 64 || txtPassword.Text.Trim().Length <3 || txtPassword.Text.Trim().Length > 64 || txtSdt.Text.Trim().Length < 9 || txtSdt.Text.Trim().Length > 11)
+                else if (txtManguoidung.Text.Trim().Length <2 || txtfullname.Text.Trim().Length>64|| txtUsername.Text.Trim().Length <3 || txtUsername.Text.Trim().Length > 64 || txtPassword.Text.Trim().Length <3 || txtPassword.Text.Trim().Length > 64 || txtSdt.Text.Trim().Length < 9 || txtSdt.Text.Trim().Length > 11)
                 {
                     MessageBox.Show("Dữ liệu không hợp lệ xin vui lòng kiểm tra lại", "Thông báo!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    conn.Close();
+
                 }
                 else
                 {
@@ -137,7 +139,7 @@ namespace QuanLyCongVan
                     {
                         if (txtUsername.Text == dta.GetString(2))
                         {
-                            MessageBox.Show("Trung UserName");
+                            MessageBox.Show("Trùng UserName");
                         }
                     }
                     else

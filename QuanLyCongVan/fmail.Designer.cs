@@ -57,6 +57,7 @@ namespace QuanLyCongVan
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -325,19 +326,32 @@ namespace QuanLyCongVan
             // 
             this.groupBox2.BackColor = System.Drawing.Color.White;
             this.groupBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("groupBox2.BackgroundImage")));
-            this.groupBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.groupBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.groupBox2.Location = new System.Drawing.Point(24, 12);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(101, 106);
             this.groupBox2.TabIndex = 24;
             this.groupBox2.TabStop = false;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.Location = new System.Drawing.Point(1292, 706);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 46);
+            this.button1.TabIndex = 27;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // fmail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1342, 764);
+            this.ClientSize = new System.Drawing.Size(1379, 764);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.groupBox2);
@@ -386,5 +400,6 @@ namespace QuanLyCongVan
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Button button1;
     }
 }

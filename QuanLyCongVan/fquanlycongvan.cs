@@ -130,7 +130,6 @@ namespace QuanLyCongVan
         }
         private void btnThem_Click(object sender, EventArgs e)
         {
-            txtMa.Enabled = true;
             AnHienBtn(false);
 
             flag = 0; //Thêm 
@@ -143,7 +142,6 @@ namespace QuanLyCongVan
 
             if
               (
-            txtMa.Text == "" ||
             txbKihieu.Text == "" ||
             cbMadvnhan.Text == "" ||
             cbNoibh.Text == "" ||
@@ -175,6 +173,7 @@ namespace QuanLyCongVan
 
                 if (flag == 0)
                 {
+                    /*
                     DataTable dt = new DataTable();
                     SqlDataAdapter ad = new SqlDataAdapter("Select id from CongVanDen where id=" + int.Parse(txtMa.Text), conn);
                     ad.Fill(dt);
@@ -184,12 +183,13 @@ namespace QuanLyCongVan
                         return;
                     }
                     else
+                    */
                     {
 
                         // cmd.CommandText = "insert into Congvanden(id,Kihieu,Kieucongvan,Loaicongvan,Chude,Noiphathanh,Ngayphathanh,Ngaynhan,Ngayluu,Trichyeu,Nguoiky,Filetaptin) values('"
-                        string sql = "insert into CongVanDen(id,SoCv,idLoaiCV,Chude,Noiphathanh,Madonvinhan,Ngaynhan,Ngayluu,Trichyeu,Nguoiky,Filetaptin,DoKhan,Nguoiduyet,TinhTrang,Manguoidung,SoTrang,DoMat) values('"
-                           + txtMa.Text.ToString()
-                           + "',N'" + txbKihieu.Text.ToString()
+                        string sql = "insert into CongVanDen(SoCv,idLoaiCV,Chude,Noiphathanh,Madonvinhan,Ngaynhan,Ngayluu,Trichyeu,Nguoiky,Filetaptin,DoKhan,Nguoiduyet,TinhTrang,Manguoidung,SoTrang,DoMat) values("
+                           
+                           + "N'" + txbKihieu.Text.ToString()
                            + "',N'" + cbLoaivb.Text.ToString()
                            + "',N'" + txbChude.Text.ToString()
                            + "',N'" + cbNoibh.Text.ToString()
@@ -318,13 +318,8 @@ namespace QuanLyCongVan
                 {
                     try
                     {
-                        SqlCommand cmd = new SqlCommand();
-                        cmd.Connection = conn;
-                        cmd.Connection.Open();
-                        cmd.CommandType = CommandType.Text;
-                        cmd.CommandText = "DELETE FROM CongVanDen WHERE id= '" + txtMa.Text.ToString() + "'";
-                        cmd.ExecuteNonQuery();
-                        cmd.Connection.Close();
+                        string sql = "DELETE FROM CongVanDen WHERE id= '" + txtMa.Text.ToString() + "'";
+                        provider.InsertQuery(sql);
                         locationlist();
                         Lammoi();
                     }
@@ -401,7 +396,7 @@ namespace QuanLyCongVan
         void LoadCombobox_thuthu()
         {
             conn.Open();
-            var cmd = new SqlCommand("select * from QuanLyNguoiDung", conn);
+            var cmd = new SqlCommand("select * from QuanLyNguoiDung where Quyen = 1 ", conn);
             var dr = cmd.ExecuteReader();
             var dt = new DataTable();
             dt.Load(dr);
@@ -566,7 +561,6 @@ namespace QuanLyCongVan
         }
         private void btnThem_Click_vbd(object sender, EventArgs e)
         {
-            txtMa.Enabled = true;
             AnHienBtn_vbd(false);
 
             flag = 0; //Thêm 
@@ -579,7 +573,6 @@ namespace QuanLyCongVan
 
             if
               (
-            txtMa_vbd.Text == "" ||
             txbKihieu_vbd.Text == "" ||
             cbMadvnhan_vbd.Text == "" ||
             cbTinhtrang_vbd.Text == "" ||
@@ -610,6 +603,7 @@ namespace QuanLyCongVan
 
                 if (flag == 0)
                 {
+                    /*
                     DataTable dt = new DataTable();
                     SqlDataAdapter ad = new SqlDataAdapter("Select id from CongVanDi where id=" + int.Parse(txtMa_vbd.Text), conn);
                     ad.Fill(dt);
@@ -619,12 +613,12 @@ namespace QuanLyCongVan
                         return;
                     }
                     else
+                    */
                     {
 
                         // cmd.CommandText = "insert into Congvanden(id,Kihieu,Kieucongvan,Loaicongvan,Chude,Noiphathanh,Ngayphathanh,Ngaynhan,Ngayluu,Trichyeu,Nguoiky,Filetaptin) values('"
-                        string sql = "insert into CongVanDi(id,SoCv,idLoaiCV,Chude,Madonvinhan,Ngaygui,Ngayluu,Trichyeu,Nguoiky,Filetaptin,DoKhan,Nguoiduyet,TinhTrang,Manguoidung,SoTrang,DoMat) values('"
-                           + txtMa_vbd.Text.ToString()
-                           + "',N'" + txbKihieu_vbd.Text.ToString()
+                        string sql = "insert into CongVanDi(SoCv,idLoaiCV,Chude,Madonvinhan,Ngaygui,Ngayluu,Trichyeu,Nguoiky,Filetaptin,DoKhan,Nguoiduyet,TinhTrang,Manguoidung,SoTrang,DoMat) values("
+                           + "N'" + txbKihieu_vbd.Text.ToString()
                            + "',N'" + cbLoaivb_vbd.Text.ToString()
                            + "',N'" + txbChude_vbd.Text.ToString()
                            + "',N'" + cbMadvnhan_vbd.Text.ToString()

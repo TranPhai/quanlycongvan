@@ -29,12 +29,14 @@ namespace QuanLyCongVan
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fxemcongvan));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnHeading = new System.Windows.Forms.Panel();
+            this.btnOpen = new System.Windows.Forms.Button();
+            this.txtfile = new System.Windows.Forms.TextBox();
             this.txtMadonvinhan = new System.Windows.Forms.TextBox();
             this.cbMadvnhan = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -70,14 +72,16 @@ namespace QuanLyCongVan
             this.dataGridViewTextBoxColumn22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn29 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn30 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn31 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn32 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn33 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.txtfile = new System.Windows.Forms.TextBox();
-            this.btnOpen = new System.Windows.Forms.Button();
+            this.clDokhan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clNguoiduyet = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clTinhtrang = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ClManguoinhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clSotrang = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clDomat_vbd = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lbSum = new System.Windows.Forms.Label();
+            this.lbTong = new System.Windows.Forms.Label();
+            this.lbSum_vbd = new System.Windows.Forms.Label();
+            this.lbTong_vbd = new System.Windows.Forms.Label();
             this.pnHeading.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvVanban)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvVanban_vbd)).BeginInit();
@@ -98,6 +102,27 @@ namespace QuanLyCongVan
             this.pnHeading.Name = "pnHeading";
             this.pnHeading.Size = new System.Drawing.Size(1718, 96);
             this.pnHeading.TabIndex = 1;
+            // 
+            // btnOpen
+            // 
+            this.btnOpen.BackColor = System.Drawing.Color.White;
+            this.btnOpen.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnOpen.BackgroundImage")));
+            this.btnOpen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnOpen.Location = new System.Drawing.Point(1464, 37);
+            this.btnOpen.Name = "btnOpen";
+            this.btnOpen.Size = new System.Drawing.Size(65, 49);
+            this.btnOpen.TabIndex = 49;
+            this.btnOpen.UseVisualStyleBackColor = false;
+            this.btnOpen.Click += new System.EventHandler(this.btnOpen_Click);
+            // 
+            // txtfile
+            // 
+            this.txtfile.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtfile.Location = new System.Drawing.Point(989, 47);
+            this.txtfile.Margin = new System.Windows.Forms.Padding(4);
+            this.txtfile.Name = "txtfile";
+            this.txtfile.Size = new System.Drawing.Size(451, 27);
+            this.txtfile.TabIndex = 48;
             // 
             // txtMadonvinhan
             // 
@@ -170,8 +195,8 @@ namespace QuanLyCongVan
             // 
             // dtgvVanban
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Cyan;
-            this.dtgvVanban.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.Cyan;
+            this.dtgvVanban.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
             this.dtgvVanban.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dtgvVanban.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvVanban.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -195,14 +220,14 @@ namespace QuanLyCongVan
             this.dtgvVanban.Location = new System.Drawing.Point(13, 148);
             this.dtgvVanban.Margin = new System.Windows.Forms.Padding(4);
             this.dtgvVanban.Name = "dtgvVanban";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Red;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvVanban.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.Red;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvVanban.RowHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.dtgvVanban.RowHeadersWidth = 51;
             this.dtgvVanban.Size = new System.Drawing.Size(1717, 239);
             this.dtgvVanban.TabIndex = 3;
@@ -329,8 +354,8 @@ namespace QuanLyCongVan
             // 
             // dtgvVanban_vbd
             // 
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Cyan;
-            this.dtgvVanban_vbd.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.Cyan;
+            this.dtgvVanban_vbd.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle11;
             this.dtgvVanban_vbd.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dtgvVanban_vbd.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvVanban_vbd.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -344,30 +369,30 @@ namespace QuanLyCongVan
             this.dataGridViewTextBoxColumn22,
             this.dataGridViewTextBoxColumn23,
             this.dataGridViewTextBoxColumn24,
-            this.dataGridViewTextBoxColumn28,
-            this.dataGridViewTextBoxColumn29,
-            this.dataGridViewTextBoxColumn30,
-            this.dataGridViewTextBoxColumn31,
-            this.dataGridViewTextBoxColumn32,
-            this.dataGridViewTextBoxColumn33});
-            this.dtgvVanban_vbd.Location = new System.Drawing.Point(13, 420);
+            this.clDokhan,
+            this.clNguoiduyet,
+            this.clTinhtrang,
+            this.ClManguoinhap,
+            this.clSotrang,
+            this.clDomat_vbd});
+            this.dtgvVanban_vbd.Location = new System.Drawing.Point(13, 430);
             this.dtgvVanban_vbd.Margin = new System.Windows.Forms.Padding(4);
             this.dtgvVanban_vbd.Name = "dtgvVanban_vbd";
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Red;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgvVanban_vbd.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.Red;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgvVanban_vbd.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.dtgvVanban_vbd.RowHeadersWidth = 51;
-            this.dtgvVanban_vbd.Size = new System.Drawing.Size(1717, 240);
-            this.dtgvVanban_vbd.TabIndex = 6;
+            this.dtgvVanban_vbd.Size = new System.Drawing.Size(1717, 219);
+            this.dtgvVanban_vbd.TabIndex = 4;
             // 
             // dataGridViewTextBoxColumn13
             // 
-            this.dataGridViewTextBoxColumn13.HeaderText = "Id công văn đến";
+            this.dataGridViewTextBoxColumn13.HeaderText = "Id công văn đi";
             this.dataGridViewTextBoxColumn13.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
             this.dataGridViewTextBoxColumn13.Width = 125;
@@ -402,7 +427,7 @@ namespace QuanLyCongVan
             // 
             // dataGridViewTextBoxColumn20
             // 
-            this.dataGridViewTextBoxColumn20.HeaderText = "Ngày nhận";
+            this.dataGridViewTextBoxColumn20.HeaderText = "Ngày gửi";
             this.dataGridViewTextBoxColumn20.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn20.Name = "dataGridViewTextBoxColumn20";
             this.dataGridViewTextBoxColumn20.Width = 125;
@@ -435,74 +460,103 @@ namespace QuanLyCongVan
             this.dataGridViewTextBoxColumn24.Name = "dataGridViewTextBoxColumn24";
             this.dataGridViewTextBoxColumn24.Width = 125;
             // 
-            // dataGridViewTextBoxColumn28
+            // clDokhan
             // 
-            this.dataGridViewTextBoxColumn28.HeaderText = "Độ khẩn";
-            this.dataGridViewTextBoxColumn28.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn28.Name = "dataGridViewTextBoxColumn28";
-            this.dataGridViewTextBoxColumn28.Width = 125;
+            this.clDokhan.HeaderText = "Độ khẩn";
+            this.clDokhan.MinimumWidth = 6;
+            this.clDokhan.Name = "clDokhan";
+            this.clDokhan.Width = 125;
             // 
-            // dataGridViewTextBoxColumn29
+            // clNguoiduyet
             // 
-            this.dataGridViewTextBoxColumn29.HeaderText = "Người duyệt";
-            this.dataGridViewTextBoxColumn29.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn29.Name = "dataGridViewTextBoxColumn29";
-            this.dataGridViewTextBoxColumn29.Width = 125;
+            this.clNguoiduyet.HeaderText = "Người duyệt";
+            this.clNguoiduyet.MinimumWidth = 6;
+            this.clNguoiduyet.Name = "clNguoiduyet";
+            this.clNguoiduyet.Width = 125;
             // 
-            // dataGridViewTextBoxColumn30
+            // clTinhtrang
             // 
-            this.dataGridViewTextBoxColumn30.HeaderText = "Tình trạng";
-            this.dataGridViewTextBoxColumn30.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn30.Name = "dataGridViewTextBoxColumn30";
-            this.dataGridViewTextBoxColumn30.Width = 125;
+            this.clTinhtrang.HeaderText = "Tình trạng";
+            this.clTinhtrang.MinimumWidth = 6;
+            this.clTinhtrang.Name = "clTinhtrang";
+            this.clTinhtrang.Width = 125;
             // 
-            // dataGridViewTextBoxColumn31
+            // ClManguoinhap
             // 
-            this.dataGridViewTextBoxColumn31.HeaderText = "Mã người nhập";
-            this.dataGridViewTextBoxColumn31.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn31.Name = "dataGridViewTextBoxColumn31";
-            this.dataGridViewTextBoxColumn31.Width = 125;
+            this.ClManguoinhap.HeaderText = "Mã người nhập";
+            this.ClManguoinhap.MinimumWidth = 6;
+            this.ClManguoinhap.Name = "ClManguoinhap";
+            this.ClManguoinhap.Width = 125;
             // 
-            // dataGridViewTextBoxColumn32
+            // clSotrang
             // 
-            this.dataGridViewTextBoxColumn32.HeaderText = "Số trang";
-            this.dataGridViewTextBoxColumn32.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn32.Name = "dataGridViewTextBoxColumn32";
-            this.dataGridViewTextBoxColumn32.Width = 125;
+            this.clSotrang.HeaderText = "Số trang";
+            this.clSotrang.MinimumWidth = 6;
+            this.clSotrang.Name = "clSotrang";
+            this.clSotrang.Width = 125;
             // 
-            // dataGridViewTextBoxColumn33
+            // clDomat_vbd
             // 
-            this.dataGridViewTextBoxColumn33.HeaderText = "Độ mật";
-            this.dataGridViewTextBoxColumn33.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn33.Name = "dataGridViewTextBoxColumn33";
-            this.dataGridViewTextBoxColumn33.Width = 125;
+            this.clDomat_vbd.HeaderText = "Độ mật";
+            this.clDomat_vbd.MinimumWidth = 6;
+            this.clDomat_vbd.Name = "clDomat_vbd";
+            this.clDomat_vbd.Width = 125;
             // 
-            // txtfile
+            // lbSum
             // 
-            this.txtfile.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtfile.Location = new System.Drawing.Point(989, 47);
-            this.txtfile.Margin = new System.Windows.Forms.Padding(4);
-            this.txtfile.Name = "txtfile";
-            this.txtfile.Size = new System.Drawing.Size(451, 27);
-            this.txtfile.TabIndex = 48;
+            this.lbSum.AutoSize = true;
+            this.lbSum.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbSum.ForeColor = System.Drawing.Color.Black;
+            this.lbSum.Location = new System.Drawing.Point(12, 391);
+            this.lbSum.Name = "lbSum";
+            this.lbSum.Size = new System.Drawing.Size(74, 20);
+            this.lbSum.TabIndex = 36;
+            this.lbSum.Text = "Tổng số:";
             // 
-            // btnOpen
+            // lbTong
             // 
-            this.btnOpen.BackColor = System.Drawing.Color.White;
-            this.btnOpen.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnOpen.BackgroundImage")));
-            this.btnOpen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnOpen.Location = new System.Drawing.Point(1464, 37);
-            this.btnOpen.Name = "btnOpen";
-            this.btnOpen.Size = new System.Drawing.Size(65, 49);
-            this.btnOpen.TabIndex = 49;
-            this.btnOpen.UseVisualStyleBackColor = false;
-            this.btnOpen.Click += new System.EventHandler(this.btnOpen_Click);
+            this.lbTong.AutoSize = true;
+            this.lbTong.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTong.ForeColor = System.Drawing.Color.Black;
+            this.lbTong.Location = new System.Drawing.Point(109, 391);
+            this.lbTong.Name = "lbTong";
+            this.lbTong.Size = new System.Drawing.Size(18, 20);
+            this.lbTong.TabIndex = 37;
+            this.lbTong.Text = "n";
+            // 
+            // lbSum_vbd
+            // 
+            this.lbSum_vbd.AutoSize = true;
+            this.lbSum_vbd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbSum_vbd.ForeColor = System.Drawing.Color.Black;
+            this.lbSum_vbd.Location = new System.Drawing.Point(9, 682);
+            this.lbSum_vbd.Name = "lbSum_vbd";
+            this.lbSum_vbd.Size = new System.Drawing.Size(74, 20);
+            this.lbSum_vbd.TabIndex = 38;
+            this.lbSum_vbd.Text = "Tổng số:";
+            this.lbSum_vbd.Visible = false;
+            // 
+            // lbTong_vbd
+            // 
+            this.lbTong_vbd.AutoSize = true;
+            this.lbTong_vbd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTong_vbd.ForeColor = System.Drawing.Color.Black;
+            this.lbTong_vbd.Location = new System.Drawing.Point(109, 682);
+            this.lbTong_vbd.Name = "lbTong_vbd";
+            this.lbTong_vbd.Size = new System.Drawing.Size(18, 20);
+            this.lbTong_vbd.TabIndex = 39;
+            this.lbTong_vbd.Text = "n";
+            this.lbTong_vbd.Visible = false;
             // 
             // fxemcongvan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1817, 711);
+            this.Controls.Add(this.lbTong_vbd);
+            this.Controls.Add(this.lbSum_vbd);
+            this.Controls.Add(this.lbTong);
+            this.Controls.Add(this.lbSum);
             this.Controls.Add(this.dtgvVanban_vbd);
             this.Controls.Add(this.dtgvVanban);
             this.Controls.Add(this.pnHeading);
@@ -514,6 +568,7 @@ namespace QuanLyCongVan
             ((System.ComponentModel.ISupportInitialize)(this.dtgvVanban)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvVanban_vbd)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -543,6 +598,9 @@ namespace QuanLyCongVan
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn26;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn27;
         private System.Windows.Forms.DataGridViewTextBoxColumn clDomat;
+        private System.Windows.Forms.TextBox txtMadonvinhan;
+        private System.Windows.Forms.TextBox txtfile;
+        private System.Windows.Forms.Button btnOpen;
         private System.Windows.Forms.DataGridView dtgvVanban_vbd;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn14;
@@ -554,14 +612,15 @@ namespace QuanLyCongVan
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn22;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn23;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn24;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn28;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn29;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn30;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn31;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn32;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn33;
-        private System.Windows.Forms.TextBox txtMadonvinhan;
-        private System.Windows.Forms.TextBox txtfile;
-        private System.Windows.Forms.Button btnOpen;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clDokhan;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clNguoiduyet;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clTinhtrang;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ClManguoinhap;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clSotrang;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clDomat_vbd;
+        private System.Windows.Forms.Label lbSum;
+        private System.Windows.Forms.Label lbTong;
+        private System.Windows.Forms.Label lbSum_vbd;
+        private System.Windows.Forms.Label lbTong_vbd;
     }
 }

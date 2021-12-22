@@ -587,7 +587,7 @@ namespace QuanLyCongVan
             this.label34.AutoSize = true;
             this.label34.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label34.ForeColor = System.Drawing.Color.Black;
-            this.label34.Location = new System.Drawing.Point(574, 37);
+            this.label34.Location = new System.Drawing.Point(571, 37);
             this.label34.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(121, 19);
@@ -653,7 +653,7 @@ namespace QuanLyCongVan
             // 
             this.label46.AutoSize = true;
             this.label46.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label46.Location = new System.Drawing.Point(8, 37);
+            this.label46.Location = new System.Drawing.Point(5, 37);
             this.label46.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label46.Name = "label46";
             this.label46.Size = new System.Drawing.Size(103, 19);
@@ -664,7 +664,7 @@ namespace QuanLyCongVan
             // 
             this.txtMadonvinhan_vbd.Enabled = false;
             this.txtMadonvinhan_vbd.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMadonvinhan_vbd.Location = new System.Drawing.Point(772, 32);
+            this.txtMadonvinhan_vbd.Location = new System.Drawing.Point(784, 32);
             this.txtMadonvinhan_vbd.Margin = new System.Windows.Forms.Padding(4);
             this.txtMadonvinhan_vbd.Multiline = true;
             this.txtMadonvinhan_vbd.Name = "txtMadonvinhan_vbd";
@@ -675,7 +675,7 @@ namespace QuanLyCongVan
             // 
             this.txtLoaicv_vbd.Enabled = false;
             this.txtLoaicv_vbd.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLoaicv_vbd.Location = new System.Drawing.Point(192, 68);
+            this.txtLoaicv_vbd.Location = new System.Drawing.Point(196, 68);
             this.txtLoaicv_vbd.Margin = new System.Windows.Forms.Padding(4);
             this.txtLoaicv_vbd.Multiline = true;
             this.txtLoaicv_vbd.Name = "txtLoaicv_vbd";
@@ -803,7 +803,7 @@ namespace QuanLyCongVan
             // 
             this.cbMadvnhan_vbd.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbMadvnhan_vbd.FormattingEnabled = true;
-            this.cbMadvnhan_vbd.Location = new System.Drawing.Point(698, 32);
+            this.cbMadvnhan_vbd.Location = new System.Drawing.Point(711, 32);
             this.cbMadvnhan_vbd.Margin = new System.Windows.Forms.Padding(4);
             this.cbMadvnhan_vbd.Name = "cbMadvnhan_vbd";
             this.cbMadvnhan_vbd.Size = new System.Drawing.Size(74, 27);
@@ -865,7 +865,7 @@ namespace QuanLyCongVan
             // 
             this.cbLoaivb_vbd.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbLoaivb_vbd.FormattingEnabled = true;
-            this.cbLoaivb_vbd.Location = new System.Drawing.Point(117, 68);
+            this.cbLoaivb_vbd.Location = new System.Drawing.Point(121, 68);
             this.cbLoaivb_vbd.Margin = new System.Windows.Forms.Padding(4);
             this.cbLoaivb_vbd.Name = "cbLoaivb_vbd";
             this.cbLoaivb_vbd.Size = new System.Drawing.Size(75, 27);
@@ -883,7 +883,7 @@ namespace QuanLyCongVan
             // txtTrichyeu_vbd
             // 
             this.txtTrichyeu_vbd.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTrichyeu_vbd.Location = new System.Drawing.Point(97, 198);
+            this.txtTrichyeu_vbd.Location = new System.Drawing.Point(100, 198);
             this.txtTrichyeu_vbd.Margin = new System.Windows.Forms.Padding(4);
             this.txtTrichyeu_vbd.Multiline = true;
             this.txtTrichyeu_vbd.Name = "txtTrichyeu_vbd";
@@ -944,8 +944,9 @@ namespace QuanLyCongVan
             // 
             // txtMa_vbd
             // 
+            this.txtMa_vbd.Enabled = false;
             this.txtMa_vbd.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMa_vbd.Location = new System.Drawing.Point(117, 34);
+            this.txtMa_vbd.Location = new System.Drawing.Point(122, 34);
             this.txtMa_vbd.Margin = new System.Windows.Forms.Padding(4);
             this.txtMa_vbd.Name = "txtMa_vbd";
             this.txtMa_vbd.Size = new System.Drawing.Size(165, 27);
@@ -1478,7 +1479,7 @@ namespace QuanLyCongVan
             // 
             this.txtNoibanhanh.Enabled = false;
             this.txtNoibanhanh.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNoibanhanh.Location = new System.Drawing.Point(1077, 35);
+            this.txtNoibanhanh.Location = new System.Drawing.Point(1082, 35);
             this.txtNoibanhanh.Margin = new System.Windows.Forms.Padding(4);
             this.txtNoibanhanh.Multiline = true;
             this.txtNoibanhanh.Name = "txtNoibanhanh";
@@ -1489,7 +1490,7 @@ namespace QuanLyCongVan
             // 
             this.txtMadonvinhan.Enabled = false;
             this.txtMadonvinhan.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMadonvinhan.Location = new System.Drawing.Point(773, 35);
+            this.txtMadonvinhan.Location = new System.Drawing.Point(781, 35);
             this.txtMadonvinhan.Margin = new System.Windows.Forms.Padding(4);
             this.txtMadonvinhan.Multiline = true;
             this.txtMadonvinhan.Name = "txtMadonvinhan";
@@ -1599,7 +1600,7 @@ namespace QuanLyCongVan
             // txtNguoiduyet
             // 
             this.txtNguoiduyet.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNguoiduyet.Location = new System.Drawing.Point(998, 81);
+            this.txtNguoiduyet.Location = new System.Drawing.Point(1007, 81);
             this.txtNguoiduyet.Margin = new System.Windows.Forms.Padding(4);
             this.txtNguoiduyet.Name = "txtNguoiduyet";
             this.txtNguoiduyet.Size = new System.Drawing.Size(162, 27);
@@ -1632,7 +1633,7 @@ namespace QuanLyCongVan
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(572, 37);
+            this.label2.Location = new System.Drawing.Point(570, 37);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(121, 19);
@@ -1645,7 +1646,7 @@ namespace QuanLyCongVan
             this.cbMadvnhan.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cbMadvnhan.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbMadvnhan.FormattingEnabled = true;
-            this.cbMadvnhan.Location = new System.Drawing.Point(700, 35);
+            this.cbMadvnhan.Location = new System.Drawing.Point(708, 35);
             this.cbMadvnhan.Margin = new System.Windows.Forms.Padding(4);
             this.cbMadvnhan.Name = "cbMadvnhan";
             this.cbMadvnhan.Size = new System.Drawing.Size(73, 27);
@@ -1676,7 +1677,7 @@ namespace QuanLyCongVan
             // 
             this.btnAddfile.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnAddfile.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddfile.Location = new System.Drawing.Point(570, 153);
+            this.btnAddfile.Location = new System.Drawing.Point(576, 153);
             this.btnAddfile.Margin = new System.Windows.Forms.Padding(4);
             this.btnAddfile.Name = "btnAddfile";
             this.btnAddfile.Size = new System.Drawing.Size(31, 27);
@@ -1688,7 +1689,7 @@ namespace QuanLyCongVan
             // txtfile
             // 
             this.txtfile.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtfile.Location = new System.Drawing.Point(120, 154);
+            this.txtfile.Location = new System.Drawing.Point(127, 154);
             this.txtfile.Margin = new System.Windows.Forms.Padding(4);
             this.txtfile.Name = "txtfile";
             this.txtfile.Size = new System.Drawing.Size(451, 27);
@@ -1731,7 +1732,7 @@ namespace QuanLyCongVan
             this.cbNoibh.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cbNoibh.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbNoibh.FormattingEnabled = true;
-            this.cbNoibh.Location = new System.Drawing.Point(998, 35);
+            this.cbNoibh.Location = new System.Drawing.Point(1004, 35);
             this.cbNoibh.Margin = new System.Windows.Forms.Padding(4);
             this.cbNoibh.Name = "cbNoibh";
             this.cbNoibh.Size = new System.Drawing.Size(79, 27);
@@ -1751,7 +1752,7 @@ namespace QuanLyCongVan
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(895, 40);
+            this.label15.Location = new System.Drawing.Point(892, 40);
             this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(106, 19);
@@ -1762,7 +1763,7 @@ namespace QuanLyCongVan
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(10, 74);
+            this.label14.Location = new System.Drawing.Point(0, 74);
             this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(112, 19);
@@ -1781,7 +1782,7 @@ namespace QuanLyCongVan
             // txtTrichyeu
             // 
             this.txtTrichyeu.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTrichyeu.Location = new System.Drawing.Point(99, 201);
+            this.txtTrichyeu.Location = new System.Drawing.Point(107, 201);
             this.txtTrichyeu.Margin = new System.Windows.Forms.Padding(4);
             this.txtTrichyeu.Multiline = true;
             this.txtTrichyeu.Name = "txtTrichyeu";
@@ -1844,7 +1845,7 @@ namespace QuanLyCongVan
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(298, 41);
+            this.label8.Location = new System.Drawing.Point(295, 41);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(91, 19);
@@ -1853,8 +1854,9 @@ namespace QuanLyCongVan
             // 
             // txtMa
             // 
+            this.txtMa.Enabled = false;
             this.txtMa.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMa.Location = new System.Drawing.Point(119, 37);
+            this.txtMa.Location = new System.Drawing.Point(121, 37);
             this.txtMa.Margin = new System.Windows.Forms.Padding(4);
             this.txtMa.Name = "txtMa";
             this.txtMa.Size = new System.Drawing.Size(165, 27);
@@ -1864,7 +1866,7 @@ namespace QuanLyCongVan
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(19, 39);
+            this.label7.Location = new System.Drawing.Point(8, 39);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(103, 19);
