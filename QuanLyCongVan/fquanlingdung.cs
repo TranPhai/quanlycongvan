@@ -229,11 +229,31 @@ namespace QuanLyCongVan
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            tk tk = new tk();
-            tk.Manguoidung = txtManguoidung.Text;
-            string sql = "DELETE FROM QuanLyNguoiDung WHERE  Manguoidung = " + "'" + tk.Manguoidung + "'";
-            provider.InsertQuery(sql);
-            locationlist();
+            if ((dgvTaiKhoan.SelectedRows.Count < 0) || (txtManguoidung.Text.Trim() == ""))
+            {
+                MessageBox.Show("Vui lòng chọn  Văn bản đến muốn xóa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                DialogResult kq = MessageBox.Show("Bạn có thực sư muốn xóa không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (System.Windows.Forms.DialogResult.Yes == kq)
+                {
+                    try
+                    {
+                        tk tk = new tk();
+                        tk.Manguoidung = txtManguoidung.Text;
+                        string sql = "DELETE FROM QuanLyNguoiDung WHERE  Manguoidung = " + "'" + tk.Manguoidung + "'";
+                        provider.InsertQuery(sql);
+                        locationlist();
+                    }
+                    catch
+                    {
+                        MessageBox.Show("Có lỗi xảy ra!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+
+             
         }
 
         private void btnHuy_Click(object sender, EventArgs e)
