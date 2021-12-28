@@ -371,11 +371,23 @@ namespace QuanLyCongVan
 
             txtMadonvinhan.DataBindings.Add(new Binding("Text", cbMadvnhan.DataSource, "Tendonvi"));
            
+            conn.Close();
+        }
+        void LoadCombobox_Donvi_VBD()
+        {
+
+            conn.Open();
+            var cmd = new SqlCommand("select * from CoQuanNgoai", conn);
+            var dr = cmd.ExecuteReader();
+            var dt = new DataTable();
+            dt.Load(dr);
+            dr.Dispose();
+           
             //vanbandi
-            cbMadvnhan_vbd.DisplayMember = "Madonvi";
+            cbMadvnhan_vbd.DisplayMember = "Macoquan";
             cbMadvnhan_vbd.DataSource = dt;
-            
-            txtMadonvinhan_vbd.DataBindings.Add(new Binding("Text", cbMadvnhan_vbd.DataSource, "Tendonvi"));
+
+            txtMadonvinhan_vbd.DataBindings.Add(new Binding("Text", cbMadvnhan_vbd.DataSource, "Tencoquan"));
             conn.Close();
         }
         void LoadCombobox_noibanhanh()
@@ -391,6 +403,11 @@ namespace QuanLyCongVan
             cbNoibh.DataSource = dt;
 
             txtNoibanhanh.DataBindings.Add(new Binding("Text", cbNoibh.DataSource, "Tencoquan"));
+                        //vanbandi
+            cbMadvnhan_vbd.DisplayMember = "Macoquan";
+            cbMadvnhan_vbd.DataSource = dt;
+
+            txtMadonvinhan_vbd.DataBindings.Add(new Binding("Text", cbMadvnhan_vbd.DataSource, "Tencoquan"));
 
         }
         void LoadCombobox_thuthu()
@@ -414,6 +431,7 @@ namespace QuanLyCongVan
             LoadCombobox_Donvi();
             LoadCombobox_thuthu();
             LoadCombobox_noibanhanh();
+            //LoadCombobox_Donvi_VBD();
         }
 
         public void Search(string coloum, string condition)
@@ -836,7 +854,7 @@ namespace QuanLyCongVan
 
         private void btnOpen_cvd_Click(object sender, EventArgs e)
         {
-            if (txtfile.Text == "") { MessageBox.Show("Nhập địa chỉ file"); }
+            if (txtfile_vbd.Text == "") { MessageBox.Show("Nhập địa chỉ file"); }
             else {
                 string url = txtfile_vbd.Text.Replace("D:\\", "");
                 string file = @"D:\" + url;

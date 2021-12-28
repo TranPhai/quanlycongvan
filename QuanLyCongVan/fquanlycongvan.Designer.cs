@@ -77,7 +77,6 @@ namespace QuanLyCongVan
             this.label33 = new System.Windows.Forms.Label();
             this.cbTinhtrang_vbd = new System.Windows.Forms.ComboBox();
             this.txtNguoiduyet_vbd = new System.Windows.Forms.TextBox();
-            this.cbDokhan_vbd = new System.Windows.Forms.TextBox();
             this.label35 = new System.Windows.Forms.Label();
             this.cbMadvnhan_vbd = new System.Windows.Forms.ComboBox();
             this.dtpNgayluu_vbd = new System.Windows.Forms.DateTimePicker();
@@ -192,6 +191,7 @@ namespace QuanLyCongVan
             this.dataGridViewTextBoxColumn27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clDomat = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.cbDokhan_vbd = new System.Windows.Forms.ComboBox();
             this.tpCongvandii.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
@@ -538,6 +538,7 @@ namespace QuanLyCongVan
             // groupBox5
             // 
             this.groupBox5.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.groupBox5.Controls.Add(this.cbDokhan_vbd);
             this.groupBox5.Controls.Add(this.label34);
             this.groupBox5.Controls.Add(this.label36);
             this.groupBox5.Controls.Add(this.label37);
@@ -556,7 +557,6 @@ namespace QuanLyCongVan
             this.groupBox5.Controls.Add(this.label33);
             this.groupBox5.Controls.Add(this.cbTinhtrang_vbd);
             this.groupBox5.Controls.Add(this.txtNguoiduyet_vbd);
-            this.groupBox5.Controls.Add(this.cbDokhan_vbd);
             this.groupBox5.Controls.Add(this.label35);
             this.groupBox5.Controls.Add(this.cbMadvnhan_vbd);
             this.groupBox5.Controls.Add(this.dtpNgayluu_vbd);
@@ -612,9 +612,9 @@ namespace QuanLyCongVan
             this.label37.Location = new System.Drawing.Point(589, 79);
             this.label37.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(81, 19);
+            this.label37.Size = new System.Drawing.Size(102, 19);
             this.label37.TabIndex = 55;
-            this.label37.Text = "Người ký*";
+            this.label37.Text = "Người duyệt*";
             // 
             // label39
             // 
@@ -668,7 +668,7 @@ namespace QuanLyCongVan
             this.txtMadonvinhan_vbd.Margin = new System.Windows.Forms.Padding(4);
             this.txtMadonvinhan_vbd.Multiline = true;
             this.txtMadonvinhan_vbd.Name = "txtMadonvinhan_vbd";
-            this.txtMadonvinhan_vbd.Size = new System.Drawing.Size(89, 29);
+            this.txtMadonvinhan_vbd.Size = new System.Drawing.Size(103, 29);
             this.txtMadonvinhan_vbd.TabIndex = 50;
             // 
             // txtLoaicv_vbd
@@ -679,7 +679,7 @@ namespace QuanLyCongVan
             this.txtLoaicv_vbd.Margin = new System.Windows.Forms.Padding(4);
             this.txtLoaicv_vbd.Multiline = true;
             this.txtLoaicv_vbd.Name = "txtLoaicv_vbd";
-            this.txtLoaicv_vbd.Size = new System.Drawing.Size(90, 29);
+            this.txtLoaicv_vbd.Size = new System.Drawing.Size(94, 29);
             this.txtLoaicv_vbd.TabIndex = 49;
             // 
             // cbDomat_vbd
@@ -779,15 +779,6 @@ namespace QuanLyCongVan
             this.txtNguoiduyet_vbd.Size = new System.Drawing.Size(162, 27);
             this.txtNguoiduyet_vbd.TabIndex = 35;
             // 
-            // cbDokhan_vbd
-            // 
-            this.cbDokhan_vbd.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbDokhan_vbd.Location = new System.Drawing.Point(117, 113);
-            this.cbDokhan_vbd.Margin = new System.Windows.Forms.Padding(4);
-            this.cbDokhan_vbd.Name = "cbDokhan_vbd";
-            this.cbDokhan_vbd.Size = new System.Drawing.Size(165, 27);
-            this.cbDokhan_vbd.TabIndex = 33;
-            // 
             // label35
             // 
             this.label35.AutoSize = true;
@@ -865,7 +856,7 @@ namespace QuanLyCongVan
             // 
             this.cbLoaivb_vbd.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbLoaivb_vbd.FormattingEnabled = true;
-            this.cbLoaivb_vbd.Location = new System.Drawing.Point(121, 68);
+            this.cbLoaivb_vbd.Location = new System.Drawing.Point(122, 68);
             this.cbLoaivb_vbd.Margin = new System.Windows.Forms.Padding(4);
             this.cbLoaivb_vbd.Name = "cbLoaivb_vbd";
             this.cbLoaivb_vbd.Size = new System.Drawing.Size(75, 27);
@@ -2054,6 +2045,18 @@ namespace QuanLyCongVan
             this.tabControl1.Size = new System.Drawing.Size(1649, 739);
             this.tabControl1.TabIndex = 8;
             // 
+            // cbDokhan_vbd
+            // 
+            this.cbDokhan_vbd.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbDokhan_vbd.FormattingEnabled = true;
+            this.cbDokhan_vbd.Items.AddRange(new object[] {
+            "Hỏa tốc",
+            "Bình thường"});
+            this.cbDokhan_vbd.Location = new System.Drawing.Point(122, 110);
+            this.cbDokhan_vbd.Name = "cbDokhan_vbd";
+            this.cbDokhan_vbd.Size = new System.Drawing.Size(164, 27);
+            this.cbDokhan_vbd.TabIndex = 58;
+            // 
             // fquanlycongvan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -2113,7 +2116,6 @@ namespace QuanLyCongVan
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.ComboBox cbTinhtrang_vbd;
         private System.Windows.Forms.TextBox txtNguoiduyet_vbd;
-        private System.Windows.Forms.TextBox cbDokhan_vbd;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.ComboBox cbMadvnhan_vbd;
         private System.Windows.Forms.DateTimePicker dtpNgayluu_vbd;
@@ -2247,5 +2249,6 @@ namespace QuanLyCongVan
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.Label label41;
         private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.ComboBox cbDokhan_vbd;
     }
 }
